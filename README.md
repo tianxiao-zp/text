@@ -1,6 +1,6 @@
 # text
 ```
-RequestContextHolder.getRequestAttributes()).getRequest()
+((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest()
 ```
 
 
