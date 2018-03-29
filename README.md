@@ -43,7 +43,7 @@ public class AccessLogAspect {
 	 * @date 2015-5-18上午11:32:26
 	 * @description
 	 */
-	@Pointcut("execution(* com.dianwoba..*.web.controller..*.*(..)) && @annotation(com.dianwoba.wireless.response.annotation.ResponseJson)")
+	@Pointcut("execution(* com.xxx..*.web.controller..*.*(..)) && @annotation(com.dianwoba.wireless.response.annotation.ResponseJson)")
 	public void responseBodyPointCut() {
 	}
 
@@ -117,7 +117,7 @@ public class CityCacheService {
 
 		private void load() {
 			Map<Integer, City> cacheTemp = new HashMap<>();
-			PropertySource<?> propertySource = env.getPropertySources().get("wireless-application");
+			PropertySource<?> propertySource = env.getPropertySources().get("application");
 			if (propertySource instanceof PropertiesPropertySource) {
 				PropertiesPropertySource propertiesPropertySource = (PropertiesPropertySource) propertySource;
 				Map<String, Object> source = propertiesPropertySource.getSource();
