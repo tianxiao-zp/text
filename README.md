@@ -43,7 +43,7 @@ public class AccessLogAspect {
 	 * @date 2015-5-18上午11:32:26
 	 * @description
 	 */
-	@Pointcut("execution(* com.xxx..*.web.controller..*.*(..)) && @annotation(com.dianwoba.wireless.response.annotation.ResponseJson)")
+	@Pointcut("execution(* com.xxx..*.web.controller..*.*(..)) && @annotation(com.xxx.xxx.response.annotation.ResponseJson)")
 	public void responseBodyPointCut() {
 	}
 
